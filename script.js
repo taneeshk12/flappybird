@@ -8,6 +8,7 @@ hole.addEventListener('animationiteration', () => {
     var random = -((Math.random()*500)+200);
     hole.style.top = random + "px";
     counter++;
+    document.querySelector('h1').innerHTML="Score: " + "" +counter;
 });
 setInterval(function(){
     var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
